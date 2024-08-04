@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Dialog, DialogTitle, DialogContent, DialogActions, TextField, Button } from '@mui/material';
 
-export default function editItem({ item, onClose, onSave }) {
+export default function UseEditItem({ item, onClose, onSave }) {
   const [name, setName] = useState(item.name);
   const [quantity, setQuantity] = useState(item.quantity);
 

@@ -6,7 +6,7 @@ import { db } from '../firebase/config';
 import { List, ListItem, ListItemText, Typography, Box, TextField, IconButton } from '@mui/material';
 import DeleteIcon from '@mui/icons-material/Delete';
 import EditIcon from '@mui/icons-material/Edit';
-import EditItemModal from './editItem';
+import EditItemModal from './UseEditItem';
 
 export default function PantryList() {
   const [items, setItems] = useState([]);
