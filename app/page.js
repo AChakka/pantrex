@@ -1,6 +1,8 @@
-import PantryList from '../components/PantryList.js';
+import dynamic from 'next/dynamic';
 import AddItem from '../components/addItem.js';
 import { Typography, Box } from '@mui/material';
+
+const PantryList = dynamic(() => import('../components/PantryList.js'), { ssr: false });
 
 export default function Home() {
   return (
